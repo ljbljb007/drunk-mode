@@ -1,5 +1,5 @@
 # 🍺 Drunk Mode Skill
-
+# 让你的Agent开启醉酒模式
 A togglable "tipsy persona" skill for OpenClaw — makes AI responses feel slightly drunk while keeping logic intact.
 
 ---
