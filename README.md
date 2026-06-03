@@ -2,6 +2,8 @@
 # 让你的Agent开启醉酒模式
 A togglable "tipsy persona" skill for OpenClaw — makes AI responses feel slightly drunk while keeping logic intact.
 
+Drunk Mode is a lightweight OpenClaw skill that lets users turn a playful "tipsy" response style on and off with simple chat or voice commands. It does not add external services or model logic; it only provides structured behavior instructions so the agent can speak more casually, use metaphors, and add controlled self-interruptions while staying coherent and safe.
+
 ---
 
 ## Features
@@ -62,6 +64,16 @@ A togglable "tipsy persona" skill for OpenClaw — makes AI responses feel sligh
 
 ---
 
+## Privacy / Security
+
+- This skill does not read credentials, API keys, browser cookies, or private files.
+- This skill does not call external APIs or upload data to third-party services.
+- This skill does not store personal data.
+- Runtime state, if used by the host app, should remain local and limited to the on/off state and selected level.
+- The packaged `.skill` file contains the same instruction-style behavior definition for OpenClaw usage.
+
+---
+
 ## File Structure
 
 ```
@@ -93,3 +105,9 @@ cp -r drunk-mode /opt/homebrew/lib/node_modules/openclaw/skills/
 ```
 
 Or use the `.skill` package file directly via OpenClaw CLI.
+
+---
+
+## License
+
+MIT
